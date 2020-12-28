@@ -147,6 +147,7 @@ func handleMsgEthermint(ctx sdk.Context, k Keeper, msg types.MsgEthermint) (*sdk
 		st.Recipient = &to
 	}
 
+
 	if !st.Simulate {
 		// Prepare db for logs
 		blockHash := types.HashFromContext(ctx)
